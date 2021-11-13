@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import { View, ViewPropTypes, Text, StyleSheet } from 'react-native';
 import { Cell } from './cell';
 import { sum } from '../utils';
+import { PropTypes } from 'prop-types';
 
 export class Row extends Component {
   static propTypes = {
-    style: ViewPropTypes.style,
-    textStyle: Text.propTypes.style
+    style: PropTypes.any,
+    textStyle: PropTypes.any
   };
 
   render() {
@@ -27,8 +28,8 @@ export class Row extends Component {
 
 export class Rows extends Component {
   static propTypes = {
-    style: ViewPropTypes.style,
-    textStyle: Text.propTypes.style
+    style: PropTypes.any,
+    textStyle: PropTypes.any
   };
 
   render() {
