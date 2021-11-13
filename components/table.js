@@ -43,7 +43,7 @@ export class Table extends Component {
 
 export class TableWrapper extends Component {
   static propTypes = {
-    style: ViewPropTypes.style
+    style: PropTypes.any
   };
 
   _renderChildren(props) {
