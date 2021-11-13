@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { View, ViewPropTypes } from 'react-native';
+import { PropTypes } from 'prop-types';
+
 
 export class Table extends Component {
   static propTypes = {
-    style: ViewPropTypes.style,
-    borderStyle: ViewPropTypes.style
+    style: PropTypes.any,
+    borderStyle: PropTypes.any
   };
 
   _renderChildren(props) {
